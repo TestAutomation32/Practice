@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Testcases.PersonaInformationTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="Testcases.PersonaInformationTest">
+        <methods>
+          <include name="Setup"/>
+          <include name="CertifyBtnStatusVerification"/>
+        </methods>
+      </class> <!-- Testcases.PersonaInformationTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Testcases.PersonaInformationTest] -->
