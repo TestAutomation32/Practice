@@ -53,6 +53,7 @@ public class EmergencyContactsPage {
         AddEmergency.until(ExpectedConditions.elementToBeClickable(AddContacts));
 
         AddContacts.click();
+        System.out.println("This is Testing.");
         return this;
     }
 
