@@ -54,6 +54,7 @@ public class EmergencyContactsPage {
 
         AddContacts.click();
         System.out.println("This is Testing.");
+        System.out.println("This is official commit by khalil");
         return this;
     }
 
