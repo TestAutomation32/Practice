@@ -20,9 +20,13 @@ public class EmergencyContactsTest extends  BaseTest {
         loginpage.AcceptPolicy();
         loginpage.AboutMeTab();
         Emergencypage.ClickEmergencyContactsButton();
+        Emergencypage.switchToIframe();
         Emergencypage.AddEmergency_Contacts();
         //Emergencypage.AddEmergency_Contacts();
-        Emergencypage.switchToIframe();
+        //Emergencypage.switchToIframe();
+        Emergencypage.EnterFirstName(Prop.getProperty("fName"));
+        Emergencypage.EnterLastName(Prop.getProperty("lName"));
+
 
 
     }

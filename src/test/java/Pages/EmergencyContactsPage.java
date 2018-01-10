@@ -28,6 +28,9 @@ public class EmergencyContactsPage {
     @FindBy(id="firstName")
     public static WebElement fName;
 
+    @FindBy(xpath = "//input[@id='lastName']")
+    public static WebElement lName;
+
     public EmergencyContactsPage ClickEmergencyContactsButton()
     {
         WebDriverWait ECbuttonwait=new WebDriverWait(driver,20);
@@ -53,8 +56,6 @@ public class EmergencyContactsPage {
         AddEmergency.until(ExpectedConditions.elementToBeClickable(AddContacts));
 
         AddContacts.click();
-        System.out.println("This is Testing.");
-        System.out.println("This is official commit by khalil");
         return this;
     }
 
@@ -68,4 +69,14 @@ public class EmergencyContactsPage {
         return this;
     }
 
+    public EmergencyContactsPage EnterLastName(String lastName)
+    {
+        WebDriverWait lNameWait=new WebDriverWait(driver,20);
+        lNameWait.until(ExpectedConditions.elementToBeClickable(lName));
+
+        lName.clear();
+        lName.sendKeys(lastName);
+
+        return this;
+    }
 }
